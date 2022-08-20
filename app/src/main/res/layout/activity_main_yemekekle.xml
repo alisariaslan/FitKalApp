@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_YemekEkle"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:id="@+id/sv_admin_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/btn_admin_cikis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Çıkış"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_baseline_arrow_back_24" />
+
+            <EditText
+                android:id="@+id/et_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="*Yemek adı"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_porsiyon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Porsiyon"
+                android:inputType="textPersonName" />
+
+            <Switch
+                android:id="@+id/sw_admin_sivi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Bu bir sıvı" />
+
+            <EditText
+                android:id="@+id/et_etiketler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Etiketler"
+                android:inputType="textMultiLine"
+                android:visibility="gone" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#tatlı" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#tuzlu" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#meyve" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#sebze" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#sos" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#hamurişi" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#kuruyemiş" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#anayemek" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#sütürünü" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#baharat" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#kahvaltı" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:tag="etiket"
+                    android:text="#atıştırmalık" />
+            </TableRow>
+
+            <EditText
+                android:id="@+id/et_gram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="*Gram (genelde 100 diye belirtilir)"
+                android:inputType="numberSigned"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/et_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="*Protein (gramında bulunan miktar)"
+                android:inputType="numberDecimal"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/et_karb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="*Karbonhidrat (gramında bulunan miktar)"
+                android:inputType="numberDecimal"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/et_yag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="*Yağ (gramında bulunan miktar)"
+                android:inputType="numberDecimal"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/et_ayrinti"
+                android:layout_width="match_parent"
+                android:layout_height="319dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Yemek bilgisi"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btn_admin_ekle"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_gravity="end"
+                android:text="ekle"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_baseline_add_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_admin_savelocationadress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="save location adress"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btn_admin_savedatabase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Database i kaydet"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

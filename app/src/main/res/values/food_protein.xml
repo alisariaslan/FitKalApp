@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_protein">
+        <item>1.1</item>
+        <item>6.45</item>
+        <item>3.92</item>
+        <item>8.34</item>
+        <item>6.0</item>
+        <item>9.0</item>
+        <item>11.46</item>
+        <item>0.0</item>
+        <item>2.83</item>
+        <item>2.74</item>
+        <item>3.12</item>
+        <item>9.0</item>
+        <item>6.94</item>
+        <item>12.4</item>
+        <item>0.0</item>
+        <item>12.0</item>
+        <item>0.9</item>
+        <item>0.26</item>
+        <item>10.71</item>
+        <item>15.93</item>
+        <item>3.02</item>
+        <item>0.46</item>
+        <item>14.0</item>
+        <item>0.14</item>
+        <item>16.1</item>
+        <item>0.1</item>
+        <item>8.52</item>
+        <item>3.0</item>
+        <item>6.6</item>
+        <item>0.8</item>
+        <item>3.2</item>
+        <item>3.1</item>
+        <item>3.7</item>
+        <item>16.0</item>
+        <item>25.8</item>
+        <item>4.0</item>
+        <item>0.93</item>
+    </string-array>
+</resources>

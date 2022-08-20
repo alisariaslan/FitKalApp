@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.FitKal"
+    >
+    <item
+        android:id="@+id/ayarlar"
+        android:title="Ayarlar" />
+    <item
+        android:id="@+id/hakkinda"
+        android:title="Diğer uygulamalar" />
+    <item
+        android:id="@+id/cikis"
+        android:title="Çıkış" />
+    <item
+        android:id="@+id/beta"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuitem_kullanici"
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuitem_yemek"
+        android:icon="@drawable/ic_baseline_local_dining_24"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuitem_hesapmakinesi"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuitem_sepet"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="Item"
+        app:showAsAction="always" />
+</menu>

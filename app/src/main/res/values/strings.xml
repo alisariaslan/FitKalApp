@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FitKal</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="aciklama">Kalori, bir enerji birimidir. İnsanlar yaşamlarını sürdürebilmek, nefes almak, hareket etmek, kan pompalamak için enerjiye ihtiyaç duyarlar ve bu enerjiyi de yiyeceklerden alırlar. Yani bir yiyeceğin besin değeri ne kadar yüksek olursa kalorisi de bir o kadar yüksektir.\n\nProteinler, hücre büyümesini ve gelişmesini sağlar. Protein vücut tarafından üretilmediği için dışarıdan alınması gereklidir. Protein kasları güçlendirir, kansızlığı önler, vücut direncini yüksek tutar.\n\nTemel besin maddelerinden biri olan, insan vücudunun temel enerji kaynağını oluşturan karbonhidratlar, vücudumuzda enerji elde etmek için kullanılan ilk ve en önemli besin öğesidir.Beyin ve sindirim sistemi başta olmak üzere vücudumuzdaki birçok organ enerji gereksinimlerini karbonhidratlardan karşılamaktadır.\n\nYağlar, hücrede yapı ve enerji maddesi olarak kullanılır. … Yağların diğer bir önemli görevi de hücre zarını oluşturmalarıdır. Hücre zarına akıcılık ve esneklik kazandırırlar. Bazı yağların bileşiminde vücut tarafından yapılamayan büyüme, gelişme ve derinin sağlığı için gerekli olan yağ asidi bulunur.</string>
+
+
+    <!--    //DEVELOPER-->
+    <string name="appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="bannerAds" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstatialAds" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--    //USER-->
+<!--            <string name="appid" translatable="false">ca-app-pub-8946455145480386~8396880095</string>-->
+<!--            <string name="bannerAds" translatable="false">ca-app-pub-8946455145480386/8045526300</string>-->
+<!--            <string name="interstatialAds" translatable="false">ca-app-pub-8946455145480386/5419362963</string>-->
+
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

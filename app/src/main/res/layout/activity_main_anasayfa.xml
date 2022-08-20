@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity"
+    tools:menu="@menu/menu">
+
+
+    <Button
+        android:id="@+id/btn_main_sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="112dp"
+        android:text="x"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="günlük makrolarım"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="28sp"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="15dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="Kullanici"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_alinankcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:text="Toplam: "
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_alinankcal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_alinankcal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="/0kcal"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="true"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:paddingStart="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="60dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gradient4"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:text="Protein"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="30dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar_orange" />
+
+                <TextView
+                    android:id="@+id/tv_alinanpro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="Alınan: 0/0gr"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gradient5"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:text="Karbonhidrat"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="30dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar_green" />
+
+                <TextView
+                    android:id="@+id/tv_alinankarb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="Alınan: 0/0gr"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/gradient6"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:text="Yağ"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="30dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar_yellow" />
+
+                <TextView
+                    android:id="@+id/tv_alinanyag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="Alınan: 0/0gr"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="30dp"
+                    android:text="Yorum"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/gradient9"
+                    android:padding="10dp"
+                    android:text="Puanlama"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_kullanici_gunlukSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="günlüğe kaydet"
+                android:textSize="20sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_kullanici_sifirla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="75dp"
+                android:text="Yediklerimi sıfırla"
+                android:textSize="34sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="13dp"
+        android:visibility="visible"
+        app:adSize="BANNER"
+        app:adUnitId="@string/bannerAds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"></com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/adClose"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="13dp"
+        android:alpha="0.2"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translationX="10dp"
+        android:visibility="gone"
+        app:backgroundTint="#000000"
+        app:icon="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adView"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

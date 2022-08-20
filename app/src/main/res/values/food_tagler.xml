@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_tagler">
+        <item>meyve,</item>
+        <item>kahvaltı,</item>
+        <item>sebze,</item>
+        <item>tatlı,</item>
+        <item>meyve,</item>
+        <item>öğün,</item>
+        <item>öğün,</item>
+        <item>şekerli,</item>
+        <item>sebze,</item>
+        <item>öğün,</item>
+        <item>sütürünü,</item>
+        <item>tavuk,</item>
+        <item>sütürünü,</item>
+        <item>tatlı,</item>
+        <item>tatlı,</item>
+        <item>sütürünü,</item>
+        <item>sebze,kahvaltı,</item>
+        <item>meyve,</item>
+        <item>kahvaltı,</item>
+        <item>öğün,</item>
+        <item>hamurişi,</item>
+        <item>sebze,</item>
+        <item>kahvaltı,</item>
+        <item>meyve,</item>
+        <item>tatlı,</item>
+        <item>meyvesuyu,</item>
+        <item>öğün,hamurişi,</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+        <item>sütürünü</item>
+    </string-array>
+</resources>

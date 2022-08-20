@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_BunuYedim"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:id="@+id/sv_bunuyedim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_cikis"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                android:text=" Çıkış"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Ekmek"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:padding="1dp"
+                app:srcCompat="@drawable/y0" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="Ne kadar yediniz?"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Siz yazın"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:text="100gr"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:text="22gr protein"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:text="76gr karbonhidrat"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:text="16gr yağ"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_artir"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textAlignment="textStart"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_artir1"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textAlignment="textStart"
+                    android:textSize="34sp" />
+            </FrameLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="1000"
+                android:padding="10dp"
+                android:progress="100" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_cikart"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="textStart"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_cikart1"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textAlignment="textStart"
+                    android:textSize="34sp" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_ekle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="+ ekle"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                app:icon="@drawable/ic_baseline_food_bank_24"
+                app:iconGravity="end"
+                app:iconSize="150px" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="1ml = 1gr olarak kabul edilmiştir.\nAşağıda ki değerler ortalamadır. En iyi sonuç için tartı ile ölçüm yapın."
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_caykasik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2gr/ml (çay kaşığı)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_yemekkasik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12gr/ml (yemek kaşığı)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_fincan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="70gr/ml (fincan)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_caybardak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100gr/ml (çay bardağı)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_subardak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200gr/ml (su bardağı)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_kase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="180gr/ml (kase)"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_tabak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="300gr/ml (yemek tabağı)"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

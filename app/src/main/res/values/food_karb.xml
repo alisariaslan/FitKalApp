@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_karb">
+        <item>33.52</item>
+        <item>0.35</item>
+        <item>43.1</item>
+        <item>60.74</item>
+        <item>90.0</item>
+        <item>60.0</item>
+        <item>81.93</item>
+        <item>7.5</item>
+        <item>10.47</item>
+        <item>33.15</item>
+        <item>6.87</item>
+        <item>0.0</item>
+        <item>9.32</item>
+        <item>53.0</item>
+        <item>4.0</item>
+        <item>3.5</item>
+        <item>3.9</item>
+        <item>13.81</item>
+        <item>57.14</item>
+        <item>46.77</item>
+        <item>22.27</item>
+        <item>0.49</item>
+        <item>0.7</item>
+        <item>14.66</item>
+        <item>37.0</item>
+        <item>11.0</item>
+        <item>53.76</item>
+        <item>4.7</item>
+        <item>80.5</item>
+        <item>2.3</item>
+        <item>42.0</item>
+        <item>26.0</item>
+        <item>35.0</item>
+        <item>2.0</item>
+        <item>16.13</item>
+        <item>47.5</item>
+        <item>9.58</item>
+    </string-array>
+</resources>

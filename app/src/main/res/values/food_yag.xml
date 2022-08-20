@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="food_yag">
+        <item>0.53</item>
+        <item>5.6</item>
+        <item>0.2</item>
+        <item>28.61</item>
+        <item>4.0</item>
+        <item>31.0</item>
+        <item>2.9</item>
+        <item>0.0</item>
+        <item>3.61</item>
+        <item>11.78</item>
+        <item>3.75</item>
+        <item>7.0</item>
+        <item>6.5</item>
+        <item>16.8</item>
+        <item>0.0</item>
+        <item>18.0</item>
+        <item>0.2</item>
+        <item>0.17</item>
+        <item>3.57</item>
+        <item>9.03</item>
+        <item>0.75</item>
+        <item>0.05</item>
+        <item>31.0</item>
+        <item>0.52</item>
+        <item>36.5</item>
+        <item>0.1</item>
+        <item>4.04</item>
+        <item>3.1</item>
+        <item>3.9</item>
+        <item>62.0</item>
+        <item>7.7</item>
+        <item>14.0</item>
+        <item>14.0</item>
+        <item>40.0</item>
+        <item>49.24</item>
+        <item>12.6</item>
+        <item>0.24</item>
+    </string-array>
+</resources>

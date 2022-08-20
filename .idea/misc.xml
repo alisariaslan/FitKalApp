@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient4.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient5.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient6.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient7.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient8.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient9.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient.xml" value="0.1695" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient2.xml" value="0.1695" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient3.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/ic_baseline_calculate_24.xml" value="0.1695" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.1695" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/ic_baseline_perm_contact_calendar_24.xml" value="0.1695" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_blue.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_green.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_orange.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_yellow.xml" value="0.1665" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout-v21/activity_main_yemeksepeti.xml" value="0.1796875" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_add.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_ayarlar.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main2.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main2__yemek.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main3.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main3_hesapmakinesi.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_admin_panel(backup).xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_admin_panel.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_admin_panel_backup.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_admin_panel_backup2.xml" value="0.1333903377511757" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_anasayfa.xml" value="0.21153846153846154" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_ayarlar.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_bunuyedim.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_food.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_kullanici.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_login.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_profil.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_profilolustur.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_sepet.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yediklerim.xml" value="0.12" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemek_ekle.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemekdetay.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemekekle.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemeksepeti.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_profil.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/layout/switch_item.xml" value="0.1414324569356301" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/menu/menu.xml" value="0.22" />
+        <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/menu/menu2.xml" value="0.14749893116716545" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
