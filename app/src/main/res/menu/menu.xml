@@ -4,35 +4,21 @@
     android:theme="@style/Theme.FitKal"
     >
     <item
-        android:id="@+id/ayarlar"
-        android:title="Ayarlar" />
-    <item
-        android:id="@+id/hakkinda"
-        android:title="Diğer uygulamalar" />
-    <item
-        android:id="@+id/cikis"
+        android:id="@+id/mi_close_app"
         android:title="Çıkış" />
     <item
-        android:id="@+id/beta"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/menuitem_kullanici"
-        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:id="@+id/mi_home"
+        android:icon="@drawable/ic_baseline_home_24"
         android:title="Item"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menuitem_yemek"
-        android:icon="@drawable/ic_baseline_local_dining_24"
+        android:id="@+id/mi_foods"
+        android:icon="@drawable/ic_baseline_search_24"
         android:title="Item"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menuitem_hesapmakinesi"
-        android:icon="@drawable/ic_baseline_calculate_24"
-        android:title="Item"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/menuitem_sepet"
-        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:id="@+id/mi_calc"
+        android:icon="@drawable/ic_baseline_person_24"
         android:title="Item"
         app:showAsAction="always" />
 </menu>

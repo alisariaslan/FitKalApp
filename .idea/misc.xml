@@ -3,6 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient4.xml" value="0.186" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient6.xml" value="0.186" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient3.xml" value="0.2445" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient4.xml" value="0.2445" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient5.xml" value="0.2445" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient6.xml" value="0.2445" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient7.xml" value="0.243" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/gradient9.xml" value="0.2445" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/ic_baseline_food_bank_24.xml" value="0.243" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.243" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_blue.xml" value="0.186" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/drawable/progressbar_color.xml" value="0.186" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_add.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_anasayfa.xml" value="0.33" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_bunuyedim.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_foods.xml" value="0.33" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_profil.xml" value="0.2520852641334569" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_profile.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_sepet.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemekdetay.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemekekle.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/activity_main_yemeksepeti.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/food_item.xml" value="0.33" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/layout/switch_item.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/menu/list_gunler.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/menu/menu.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/menu/menu2.xml" value="0.3009833262077811" />
+        <entry key="..\:/Projects/AndroidStudioProjects/FitKal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.243" />
         <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient4.xml" value="0.1665" />
         <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient5.xml" value="0.1665" />
         <entry key="..\:/Users/yearn/AndroidStudioProjects/FitKal/app/src/main/res/drawable-v24/gradient6.xml" value="0.1665" />

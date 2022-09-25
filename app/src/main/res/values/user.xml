@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="isim" type="string">Ali</item>
-    <item name="gereken_protein" type="string">220</item>
-    <item name="gereken_karb" type="string">530</item>
-    <item name="gereken_yag" type="string">120</item>
-</resources>

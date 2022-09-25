@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pakachu.fitkal">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,34 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitKal">
         <activity
+            android:name=".MainActivity_Profile"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity_Profil"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_Ayarlar"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_YemekEkle"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_BunuYedim"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_Sepet"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_YemekDetay"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_ProfilOlustur"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_Yemeksepeti"
-            android:exported="false" />
-        <activity
-            android:name=".AddActivity"
+            android:name=".MainActivity_Foods"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +28,9 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/appid" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

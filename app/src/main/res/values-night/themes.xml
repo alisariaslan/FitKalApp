@@ -2,17 +2,16 @@
     <!-- Base application theme. -->
     <style name="Theme.FitKal" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/gecemodu</item>
+        <item name="colorPrimary">@color/topbar</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#FF6839</item>
         <!-- Customize your theme here. -->
-        <item name="android:background">@color/gecemodu</item>
-        <item name="android:buttonStyleInset">@style/Widget.AppCompat.Button</item>
     </style>
+
 </resources>

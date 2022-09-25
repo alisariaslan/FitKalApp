@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitKal</string>
+    <string name="teddy_welcome">Hey merhaba. Benim adım Teddy. Taş gibi sıkı olmak üzeresin. Fakat profilini bulamadım. Bu yüzden seni şimdi yönlendireceğim</string>
+    <string name="protein">Protein</string>
+    <string name="carb">Karbonhidrat</string>
+    <string name="fat">Yağ</string>
+    <string name="g_taken">gram alındı</string>
+    <string name="teddy_warning">Lütfen profil oluşturun</string>
+    <string name="c_taken">kalori alındı</string>
+    <string name="categories">Kategoriler</string>
+    <string name="add_food">Yemek ekle +</string>
+    <string name="f_name">Yemek adı</string>
+    <string name="how_much_gram">kaç gram?</string>
+    <string name="gram_carb">karbonhidrat (gr)</string>
+    <string name="gram_fat">yağ (gr)</string>
+    <string name="photo">Kameradan çek</string>
+    <string name="gallery">Galeriden seç</string>
+    <string name="close_window">Pencereyi Kapat</string>
+    <string name="save">Kaydet</string>
+    <string name="find_food">Yemek ara</string>
+    <string name="tags">etiketler (lütfen kelimeleri \',\' ile ayırınız)</string>
+    <string name="fill">Lütfen tüm boş alanları doldurun (etiketler zorunlu değildir)</string>
+    <string name="success">Listeye başarıyla eklendi</string>
+    <string name="kcal">Kalori</string>
+    <string name="gram">Gram</string>
+    <string name="eaten">Bunu yedim</string>
+</resources>

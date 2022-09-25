@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StayFit</string>
+    <string name="teddy_welcome">Hello there. My name is Teddy. You are about the be fit as rock. But i can\'t find your profile. So i will redirect you in like</string>
+    <string name="protein">Protein</string>
+    <string name="carb">Carbohydrate</string>
+    <string name="fat">Fat</string>
+    <string name="g_taken">gram has taken</string>
+    <string name="teddy_warning">Please create your profile</string>
+    <string name="c_taken">calories has taken</string>
+    <string name="categories">Categories</string>
+    <string name="add_food">Add food</string>
+    <string name="f_name">Food name</string>
+    <string name="how_much_gram">how much grams?</string>
+    <string name="gram_carb">carbonhydrate (gr)</string>
+    <string name="gram_fat">fat (gr)</string>
+    <string name="photo">Take a photo</string>
+    <string name="gallery">Select from gallery</string>
+    <string name="close_window">Close Window</string>
+    <string name="save">Save</string>
+    <string name="find_food">Search food by name</string>
+    <string name="tags">tags (please divide words using \',\')</string>
+    <string name="fill">Please fill all blank areas (tags are not required)</string>
+    <string name="success">Successfully added to list</string>
+    <string name="kcal">Calories</string>
+    <string name="gram">Grams</string>
+    <string name="eaten">I ate this</string>
+</resources>

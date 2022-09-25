@@ -1,24 +1,39 @@
 <resources>
-    <string name="app_name">FitKal</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="aciklama">Kalori, bir enerji birimidir. İnsanlar yaşamlarını sürdürebilmek, nefes almak, hareket etmek, kan pompalamak için enerjiye ihtiyaç duyarlar ve bu enerjiyi de yiyeceklerden alırlar. Yani bir yiyeceğin besin değeri ne kadar yüksek olursa kalorisi de bir o kadar yüksektir.\n\nProteinler, hücre büyümesini ve gelişmesini sağlar. Protein vücut tarafından üretilmediği için dışarıdan alınması gereklidir. Protein kasları güçlendirir, kansızlığı önler, vücut direncini yüksek tutar.\n\nTemel besin maddelerinden biri olan, insan vücudunun temel enerji kaynağını oluşturan karbonhidratlar, vücudumuzda enerji elde etmek için kullanılan ilk ve en önemli besin öğesidir.Beyin ve sindirim sistemi başta olmak üzere vücudumuzdaki birçok organ enerji gereksinimlerini karbonhidratlardan karşılamaktadır.\n\nYağlar, hücrede yapı ve enerji maddesi olarak kullanılır. … Yağların diğer bir önemli görevi de hücre zarını oluşturmalarıdır. Hücre zarına akıcılık ve esneklik kazandırırlar. Bazı yağların bileşiminde vücut tarafından yapılamayan büyüme, gelişme ve derinin sağlığı için gerekli olan yağ asidi bulunur.</string>
+    <string name="app_name">StayFit</string>
 
 
-    <!--    //DEVELOPER-->
+    <!--    //TEST ADDS-->
     <string name="appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="bannerAds" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstatialAds" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="teddy_welcome">Hello there. My name is Teddy. You are about the be fit as rock. But i can\'t find your profile. So i will redirect you in like</string>
+    <string name="protein">Protein</string>
+    <string name="carb">Carbohydrate</string>
+    <string name="fat">Fat</string>
+    <string name="g_taken">gram has taken</string>
+    <string name="teddy_warning">Please create your profile</string>
+    <string name="c_taken">calories has taken</string>
+    <string name="categories">Categories</string>
+    <string name="add_food">Add food +</string>
+    <string name="f_name">Food name</string>
+    <string name="how_much_gram">how much grams?</string>
+    <string name="gram_protein" translatable="false">protein (gr)</string>
+    <string name="gram_carb">carbonhydrate (gr)</string>
+    <string name="gram_fat">fat (gr)</string>
+    <string name="photo">Take a photo</string>
+    <string name="gallery">Select from gallery</string>
+    <string name="close_window">Close Window</string>
+    <string name="save">Save</string>
+    <string name="find_food">Search food by name</string>
+    <string name="tags">tags (please divide words using \',\')</string>
+    <string name="fill">Please fill all blank areas (tags are not required)</string>
+    <string name="success">Successfully added to list</string>
+    <string name="kcal">Calories</string>
+    <string name="gram">Grams</string>
+    <string name="eaten">I ate this</string>
 
-    <!--    //USER-->
+
+    <!--    //REAL ADS-->
 <!--            <string name="appid" translatable="false">ca-app-pub-8946455145480386~8396880095</string>-->
 <!--            <string name="bannerAds" translatable="false">ca-app-pub-8946455145480386/8045526300</string>-->
 <!--            <string name="interstatialAds" translatable="false">ca-app-pub-8946455145480386/5419362963</string>-->

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string-array name="Cinsiyet">
-        <item>ERKEK</item>
-        <item>KADIN</item>
-        <item>DİĞER</item>
-    </string-array>
-</resources>

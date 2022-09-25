@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="icerik_rengi">#FAFAFA</color>
-    <color name="topbar">#FF9800</color>
+    <color name="topbar">#FF6839</color>
     <color name="gecemodu">#111</color>
     <color name="divider">#999</color>
+    <color name="my_text_color">#ccc</color>
+    <color name="my_sub_text_color">#4D000000</color>
 </resources>
