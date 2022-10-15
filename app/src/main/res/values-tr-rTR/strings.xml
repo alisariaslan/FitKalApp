@@ -18,11 +18,20 @@
     <string name="gallery">Galeriden seç</string>
     <string name="close_window">Pencereyi Kapat</string>
     <string name="save">Kaydet</string>
-    <string name="find_food">Yemek ara</string>
+    <string name="find_food">Yemek adı ara</string>
     <string name="tags">etiketler (lütfen kelimeleri \',\' ile ayırınız)</string>
-    <string name="fill">Lütfen tüm boş alanları doldurun (etiketler zorunlu değildir)</string>
+    <string name="fill">Lütfen tüm boş alanları doldurun (etiketler zorunlu değildir) ve gramajları kontrol edin</string>
     <string name="success">Listeye başarıyla eklendi</string>
     <string name="kcal">Kalori</string>
     <string name="gram">Gram</string>
     <string name="eaten">Bunu yedim</string>
+    <string name="error">Bilinmeyen hata!</string>
+    <string name="delete">Başarıyla silindi</string>
+    <string name="find_food_by_c">Kategoriye göre aranıyor</string>
+    <string name="max">Maksimum limite ulaştınız</string>
+    <string name="please">Lütfen kabul edilebilir bir değer girin</string>
+    <string name="daily_add">Günlük yediklerime başarıyla eklendi</string>
+    <string name="new_profile">Yeni Profil Oluştur</string>
+    <string name="edit_profile">Profili Düzenle</string>
+    <string name="delete_profile">Profili Sil</string>
 </resources>

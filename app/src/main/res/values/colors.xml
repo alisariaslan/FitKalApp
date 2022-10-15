@@ -13,4 +13,8 @@
     <color name="divider">#999</color>
     <color name="my_text_color">#ccc</color>
     <color name="my_sub_text_color">#4D000000</color>
+    <color name="protein">#FF5722</color>
+    <color name="carb">#00BCD4</color>
+    <color name="fat">#FFEB3B</color>
+
 </resources>

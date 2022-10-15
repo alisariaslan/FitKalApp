@@ -2,12 +2,20 @@ package com.pakachu.fitkal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.pakachu.fitkal.databinding.ActivityMainProfileBinding;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class MainActivity_Profile extends AppCompatActivity {
 
@@ -19,6 +27,12 @@ public class MainActivity_Profile extends AppCompatActivity {
         binding = ActivityMainProfileBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.topbar)));
+
+
+
+
 
     }
 

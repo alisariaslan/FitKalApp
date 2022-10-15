@@ -26,11 +26,20 @@
     <string name="save">Save</string>
     <string name="find_food">Search food by name</string>
     <string name="tags">tags (please divide words using \',\')</string>
-    <string name="fill">Please fill all blank areas (tags are not required)</string>
+    <string name="fill">Please fill all blank areas (tags are not required) and check grams</string>
     <string name="success">Successfully added to list</string>
     <string name="kcal">Calories</string>
     <string name="gram">Grams</string>
     <string name="eaten">I ate this</string>
+    <string name="error">Unknown error!</string>
+    <string name="delete">Successfully deleted</string>
+    <string name="find_food_by_c">Searching food by categorie</string>
+    <string name="max">You are reached the maximum limit</string>
+    <string name="please">Please enter an acceptable value</string>
+    <string name="daily_add">Sucessfully added to daily food consume list</string>
+    <string name="new_profile">Create New Profile</string>
+    <string name="edit_profile">Edit Proile</string>
+    <string name="delete_profile">Delete Profile</string>
 
 
     <!--    //REAL ADS-->

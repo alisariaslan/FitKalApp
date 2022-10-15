@@ -37,7 +37,8 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="10dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -131,6 +132,7 @@
                     android:id="@+id/tv_alinanpro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/audiowide"
                     android:paddingLeft="30dp"
                     android:paddingTop="5dp"
@@ -209,8 +211,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical"
-                android:paddingBottom="30dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView6"
@@ -247,6 +248,22 @@
                     android:textAlignment="textStart"
                     android:textColor="@color/my_sub_text_color"
                     android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/audiowide"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="@string/save"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#CDDC39"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#0D000000"
+                    app:strokeWidth="3dp" />
             </LinearLayout>
         </FrameLayout>
 

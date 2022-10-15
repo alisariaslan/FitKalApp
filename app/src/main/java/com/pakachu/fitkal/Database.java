@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.drawable.Drawable;
 
+import java.util.ArrayList;
+
 public class Database extends SQLiteOpenHelper {
 
     private static final String TABLE1 = "food_list";
@@ -24,13 +26,17 @@ public class Database extends SQLiteOpenHelper {
     private final String TABLE2_COL2 = "eaten_id";
     private final String TABLE2_COL3 = "eaten_gram";
 
-    private static final String TABLE3 = "profile";
+    private static final String TABLE3 = "profile_list";
     private final String TABLE3_COL1 = "id";
     private final String TABLE3_COL2 = "name_surname";
     private final String TABLE3_COL3 = "age";
     private final String TABLE3_COL4 = "weight";
     private final String TABLE3_COL5 = "height";
     private final String TABLE3_COL6 = "choosen_type";
+
+    private static final String TABLE4 = "tag_list";
+    private final String TABLE4_COL1 = "id";
+    private final String TABLE4_COL2 = "tag";
 
     public Database(Context context) {
         super(context, TABLE1, null, 1);
@@ -60,13 +66,17 @@ public class Database extends SQLiteOpenHelper {
                 TABLE3_COL5 + " INTEGER," +
                 TABLE3_COL6 + " INTEGER)";
         db.execSQL(sql);
+
+        sql = "CREATE TABLE " + TABLE4 + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                TABLE4_COL2 + " TEXT)";
+        db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
     }
 
-    public boolean add_data_to_food_list(String name, byte[] img, Integer gram, Float protein, Float carb, Float fat,String tags) {
+    public boolean add_data_to_food_list(String name, byte[] img, Integer gram, Float protein, Float carb, Float fat, String tags) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(TABLE1_COL2, name);
@@ -89,7 +99,7 @@ public class Database extends SQLiteOpenHelper {
         return result != -1;
     }
 
-    public boolean create_new_profile(String name, int age, float weight, int height, int choosen_type) {
+    public boolean add_data_to_profile_list(String name, int age, float weight, int height, int choosen_type) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE3);
         ContentValues contentValues = new ContentValues();
@@ -102,10 +112,60 @@ public class Database extends SQLiteOpenHelper {
         return result != -1;
     }
 
+    public boolean add_data_to_tag_list(String tag) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(TABLE4_COL2, tag);
+        long result = db.insert(TABLE4, null, contentValues);
+        return result != -1;
+    }
+
+    public int get_tag_id(String tag) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM tag_list WHERE tag='" + tag + "'", null);
+        if (data.moveToNext())
+            return data.getInt(0);
+        else return -1;
+    }
+
+    public int get_food_id(String food) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM food_list WHERE name='" + food + "'", null);
+        if (data.moveToNext())
+            return data.getInt(0);
+        else return -1;
+    }
+
+    public String get_tag_from_id(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM tag_list WHERE id='" + id + "'", null);
+        if (data.moveToNext())
+            return data.getString(1);
+        else return null;
+    }
+
     public Cursor get_data_with_sql(String sql) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor data = db.rawQuery(sql, null);
         return data;
+    }
+
+    public int check_profile() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM "+TABLE3, null);
+        if(data.moveToNext())
+            return 1;
+        return 0;
+    }
+
+    public ArrayList<String> get_tags_array(String sql) {
+        ArrayList<String> tags = new ArrayList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery(sql, null);
+        while (data.moveToNext()) {
+            tags.add(data.getString(1));
+        }
+        return tags;
     }
 
     public void execute_sql(String sql) {

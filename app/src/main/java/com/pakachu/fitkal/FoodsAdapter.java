@@ -24,8 +24,8 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
     ArrayList<FoodItem> foodItems;
     Activity activity;
 
-    int animation_duration = 1000;
-    int animation_duration_implementer = 100;
+//    int animation_duration = 500;
+//    int animation_duration_implementer = 50;
 
     public FoodsAdapter(Activity activity, ArrayList<FoodItem> foodItems, MainActivity_Foods mainActivity_foods) {
         this.activity = activity;
@@ -41,15 +41,16 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        binding.cardView31.animate().rotationY(360f).setDuration(animation_duration);
-        animation_duration += animation_duration_implementer;
+        binding.cardView31.startAnimation(AnimationUtils.loadAnimation(activity,R.anim.fall));
+//        binding.cardView31.animate().alpha(1f).setDuration(animation_duration);
+//        animation_duration += animation_duration_implementer;
         FoodItem foodItem = foodItems.get(position);
         binding.textView912.setText(foodItem.first_name);
         Bitmap first_image = null;
         if (Arrays.toString(foodItem.first_img).length() > 2) {
             first_image = BitmapFactory.decodeByteArray(foodItem.first_img, 0, foodItem.first_img.length);
             binding.imageView44.setImageBitmap(first_image);
-        }
+        } else binding.cardView43.setVisibility(View.GONE);
         Bitmap finalFirst_image = first_image;
         binding.button51.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,15 +60,16 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
             }
         });
         if (foodItem.second_id != 0) {
-            binding.cardView32.animate().rotationY(360f).setDuration(animation_duration);
-            animation_duration += animation_duration_implementer;
+            binding.cardView32.startAnimation(AnimationUtils.loadAnimation(activity,R.anim.fall));
+//            binding.cardView32.animate().alpha(1f).setDuration(animation_duration);
+//            animation_duration += animation_duration_implementer;
             binding.cardView32.setVisibility(View.VISIBLE);
             binding.textView911.setText(foodItem.second_name);
             Bitmap second_image = null;
             if (Arrays.toString(foodItem.second_img).length() > 2) {
                 second_image = BitmapFactory.decodeByteArray(foodItem.second_img, 0, foodItem.second_img.length);
                 binding.imageView41.setImageBitmap(second_image);
-            }
+            }else binding.cardView42.setVisibility(View.GONE);
             Bitmap finalSecond_image = second_image;
             binding.button52.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -78,15 +80,16 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
             });
         }
         if (foodItem.third_id != 0) {
-            binding.cardView33.animate().rotationY(360f).setDuration(animation_duration);
-            animation_duration += animation_duration_implementer;
+            binding.cardView33.startAnimation(AnimationUtils.loadAnimation(activity,R.anim.fall));
+//            binding.cardView33.animate().alpha(1f).setDuration(animation_duration);
+//            animation_duration += animation_duration_implementer;
             binding.cardView33.setVisibility(View.VISIBLE);
             binding.textView91.setText(foodItem.third_name);
             Bitmap third_image = null;
             if (Arrays.toString(foodItem.third_img).length() > 2) {
                 third_image = BitmapFactory.decodeByteArray(foodItem.third_img, 0, foodItem.third_img.length);
                 binding.imageView46.setImageBitmap(third_image);
-            }
+            }else binding.cardView44.setVisibility(View.GONE);
             Bitmap finalThird_image = third_image;
             binding.button53.setOnClickListener(new View.OnClickListener() {
                 @Override
