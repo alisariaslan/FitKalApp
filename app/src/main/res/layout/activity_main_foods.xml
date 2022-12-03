@@ -37,7 +37,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:background="@color/topbar">
 
             <TextView
@@ -526,7 +526,7 @@
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/audiowide"
-                            android:text="@string/save"
+                            android:text="@string/sav"
                             android:textSize="12sp"
                             app:cornerRadius="30dp" />
                     </LinearLayout>

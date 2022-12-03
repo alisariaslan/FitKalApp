@@ -28,19 +28,20 @@ public class Database extends SQLiteOpenHelper {
 
     private static final String TABLE3 = "profile_list";
     private final String TABLE3_COL1 = "id";
-    private final String TABLE3_COL2 = "name_surname";
+    private final String TABLE3_COL2 = "profile_name";
     private final String TABLE3_COL3 = "age";
     private final String TABLE3_COL4 = "weight";
     private final String TABLE3_COL5 = "height";
-    private final String TABLE3_COL6 = "choosen_type";
+    private final String TABLE3_COL6 = "is_selected";
 
     private static final String TABLE4 = "tag_list";
     private final String TABLE4_COL1 = "id";
     private final String TABLE4_COL2 = "tag";
 
     public Database(Context context) {
-        super(context, TABLE1, null, 1);
+        super(context, "my_database", null, 2);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -99,17 +100,37 @@ public class Database extends SQLiteOpenHelper {
         return result != -1;
     }
 
-    public boolean add_data_to_profile_list(String name, int age, float weight, int height, int choosen_type) {
+    public boolean add_data_to_profile_list(String name, int age, float weight, int height,int is_selected) {
+        if(is_selected==1)
+            execute_sql("UPDATE "+TABLE3+" SET is_selected=0");
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DELETE FROM " + TABLE3);
         ContentValues contentValues = new ContentValues();
         contentValues.put(TABLE3_COL2, name);
         contentValues.put(TABLE3_COL3, age);
         contentValues.put(TABLE3_COL4, weight);
         contentValues.put(TABLE3_COL5, height);
-        contentValues.put(TABLE3_COL6, choosen_type);
-        long result = db.insert(TABLE2, null, contentValues);
+        contentValues.put(TABLE3_COL6, is_selected);
+        long result = db.insert(TABLE3, null, contentValues);
         return result != -1;
+    }
+
+    public boolean delete_data_from_profile_list(String profile_name) {
+        Cursor c = get_data_with_sql("SELECT * FROM profile_list WHERE profile_name='" + profile_name + "'");
+        if (c.moveToNext()) {
+            int id = c.getInt(0);
+            String new_query = "DELETE FROM profile_list WHERE id=" + id;
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.execSQL(new_query);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean update_data_for_profile_list(String profile_name, int age, float weight, int height) {
+            String new_query = "UPDATE profile_list SET age = " + age + ", weight = " + weight + ", height = " + height + ", profile_name = '" + profile_name + "'";
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.execSQL(new_query);
+            return true;
     }
 
     public boolean add_data_to_tag_list(String tag) {
@@ -152,10 +173,16 @@ public class Database extends SQLiteOpenHelper {
 
     public int check_profile() {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor data = db.rawQuery("SELECT * FROM "+TABLE3, null);
-        if(data.moveToNext())
+        Cursor data = db.rawQuery("SELECT * FROM " + TABLE3, null);
+        if (data.moveToNext())
             return 1;
         return 0;
+    }
+
+    public Cursor getProfile(String name) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM " + TABLE3 + " WHERE profile_name='" + name + "'", null);
+        return data;
     }
 
     public ArrayList<String> get_tags_array(String sql) {

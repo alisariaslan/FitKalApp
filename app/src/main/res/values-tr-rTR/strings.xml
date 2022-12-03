@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FitKal</string>
-    <string name="teddy_welcome">Hey merhaba. Benim adım Teddy. Taş gibi sıkı olmak üzeresin. Fakat profilini bulamadım. Bu yüzden seni şimdi yönlendireceğim</string>
+    <string name="teddy_welcome">Hey merhaba. Benim adım Teddy. Taş gibi sıkı olmak üzeresin. Fakat profilini bulamadım. Bu yüzden seni şimdi profil sayfasına yönlendireceğim.</string>
     <string name="protein">Protein</string>
     <string name="carb">Karbonhidrat</string>
     <string name="fat">Yağ</string>
@@ -17,7 +17,7 @@
     <string name="photo">Kameradan çek</string>
     <string name="gallery">Galeriden seç</string>
     <string name="close_window">Pencereyi Kapat</string>
-    <string name="save">Kaydet</string>
+    <string name="save">Bugünü Kaydet</string>
     <string name="find_food">Yemek adı ara</string>
     <string name="tags">etiketler (lütfen kelimeleri \',\' ile ayırınız)</string>
     <string name="fill">Lütfen tüm boş alanları doldurun (etiketler zorunlu değildir) ve gramajları kontrol edin</string>
@@ -31,7 +31,23 @@
     <string name="max">Maksimum limite ulaştınız</string>
     <string name="please">Lütfen kabul edilebilir bir değer girin</string>
     <string name="daily_add">Günlük yediklerime başarıyla eklendi</string>
-    <string name="new_profile">Yeni Profil Oluştur</string>
+    <string name="new_profile">Profil Oluştur</string>
     <string name="edit_profile">Profili Düzenle</string>
     <string name="delete_profile">Profili Sil</string>
+    <string name="activate">Etkinleştir</string>
+    <string name="name">Ad</string>
+    <string name="age">Yaş</string>
+    <string name="weight">Kilo</string>
+    <string name="height">Boy</string>
+    <string name="my_profile">Boş Profil</string>
+    <string name="ate_list">Bugünün Menüsü:</string>
+    <string name="progress">Nasıl ilerliyorum?</string>
+    <string name="err">Bir sorun var. Lütfen yazdığınız verileri kontrol edin. Boşluk bırakmayın. 0 Değerini girmeyin.</string>
+    <string name="congrats">Tebrikler, profil listeniz başarıyla etkilendi.</string>
+    <string name="sav">Kaydet</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="seleted">Seçili</string>
+    <string name="sprofile">"  'e ait Profil"</string>
+    <string name="ate_list_empty">Bugünün Menüsü: (yeterli veri mevcut değil)</string>
 </resources>

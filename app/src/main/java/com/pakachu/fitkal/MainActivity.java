@@ -1,15 +1,23 @@
 package com.pakachu.fitkal;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.data.BarData;
@@ -47,12 +55,24 @@ public class MainActivity extends AppCompatActivity {
 
         database = new Database(getBaseContext());
         Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.topbar)));
-        profile_check();
-        macro_check();
 
         binding.fl1.startAnimation(AnimationUtils.loadAnimation(this, R.anim.comefromleft));
         binding.fl2.startAnimation(AnimationUtils.loadAnimation(this, R.anim.comefromright));
         binding.fl3.startAnimation(AnimationUtils.loadAnimation(this, R.anim.comefromleft));
+
+        new CountDownTimer(1000 ,10000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+            }
+
+            @Override
+            public void onFinish() {
+                binding.tedyCons.setVisibility(View.VISIBLE);
+                binding.tedyCons.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.fadeinslow));
+            }
+        }.start();
+
+
 
 
 //        List<BarEntry> entries = new ArrayList<>();
@@ -78,14 +98,30 @@ public class MainActivity extends AppCompatActivity {
 //        binding.pieChart.setData(pie_data);
 //        binding.pieChart.invalidate(); // refresh
 
+}
+
+
+    public void profile_check() {
+        database = new Database(getBaseContext());
+
+        Cursor cursor = database.get_data_with_sql("SELECT * FROM profile_list");
+        if (cursor.moveToNext()) {
+
+            binding.textView8.setText(cursor.getString(1) + getString(R.string.sprofile));
+            binding.textView8.clearAnimation();
+        } else {
+            binding.textView8.startAnimation(AnimationUtils.loadAnimation(this, R.anim.blink_anim));
+            binding.textView8.setText(getString(R.string.teddy_warning));
+        }
+
     }
 
-    private void profile_check() {
-        if (database.check_profile() == 0) {
-            binding.textView8.startAnimation(AnimationUtils.loadAnimation(this, R.anim.blink_anim));
-
-        } else {
-
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            profile_check();
+            macro_check();
         }
     }
 
@@ -108,11 +144,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.mi_foods)
             startActivity(new Intent(this, MainActivity_Foods.class));
-        else if (id == R.id.mi_calc)
-            startActivity(new Intent(this, MainActivity_Profile.class));
-        else if (id == R.id.mi_close_app)
+        else if (id == R.id.mi_calc) {
+            Intent intent = new Intent(this, MainActivity_Profile.class);
+            intent.setAction("main_ac");
+            startActivity(intent);
+        } else if (id == R.id.mi_close_app)
             finish();
         return true;
     }
-
 }
